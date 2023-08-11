@@ -3,6 +3,7 @@ const { spawn } = require('child_process')
 const path = require('path')
 const fs = require('fs')
 const yaml = require('js-yaml')
+const copyDistToRoot = require('./copy-dist.js')
 
 // Load the workspace file and parse it
 const workspace = yaml.load(fs.readFileSync('pnpm-workspace.yaml', 'utf-8'))
@@ -38,6 +39,9 @@ Promise.all(appsToRunCommand.map((app) => {
           console.error(`Error executing 'pnpm ${npmCommand}' on app: ${app}`)
           reject(new Error(`pnpm ${npmCommand} exited with code ${code}`))
         } else {
+          if (npmCommand === 'build') {
+            copyDistToRoot(app, appDir)
+          }
           resolve()
         }
       })

@@ -35,9 +35,9 @@ module.exports = {
         css: [
         ],
         js: [
-          process.env.VUE_APP_STATICS_PATH + '/public/js/vue.min.js', // 访问https://unpkg.com/vue/dist/vue.min.js获取最新版本
-          process.env.VUE_APP_STATICS_PATH + '/public/js/vue-router.min.js',
-          process.env.VUE_APP_STATICS_PATH +
+          process.env.VUE_APP_STATICS_PATH_EHIRE + '/public/js/vue.min.js', // 访问https://unpkg.com/vue/dist/vue.min.js获取最新版本
+          process.env.VUE_APP_STATICS_PATH_EHIRE + '/public/js/vue-router.min.js',
+          process.env.VUE_APP_STATICS_PATH_EHIRE +
             '/public/js/axios.min.js?version=1.0.1'
         ]
       }
@@ -48,9 +48,9 @@ module.exports = {
       )
       config.plugins.forEach((val) => {
         if (val.constructor.name === 'HtmlWebpackPlugin') {
-          if (!val.options) val.options = {}
-          val.options.cdn = cdn
-          val.options.chunks = 'all'
+          if (!val.userOptions) val.userOptions = {}
+          val.userOptions.cdn = cdn
+          val.userOptions.chunks = 'all'
         }
       })
     } else {
@@ -60,8 +60,8 @@ module.exports = {
       }
       config.plugins.forEach((val) => {
         if (val.constructor.name === 'HtmlWebpackPlugin') {
-          if (!val.options) val.options = {}
-          val.options.cdn = cdn
+          if (!val.userOptions) val.userOptions = {}
+          val.userOptions.cdn = cdn
         }
       })
     }
