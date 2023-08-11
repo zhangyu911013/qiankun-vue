@@ -1,0 +1,19 @@
+#app {
+  display: flex;
+  flex-direction: column;
+}
+.app-header {
+  height: 63px;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  .app-aside {
+    width: 200px;
+  }
+  .app-content {
+    flex: 1;
+  }
+}

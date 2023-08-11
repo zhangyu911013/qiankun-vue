@@ -1,0 +1,131 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  word-break: break-word;
+  white-space: normal;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.a {
+  cursor: pointer;
+  color: #00457d;
+}
+.a:link,
+.a:active,
+.a:visited {
+  color: #00457d;
+}
+.a:hover {
+  color: #ff6000;
+}
+
+* {
+  box-sizing: inherit;
+  -ms-overflow-style: none;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img,
+embed,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+img {
+  -webkit-touch-callout: default;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+div {
+  scrollbar-width: none;
+}
+
+pre {
+  word-break: break-word;
+  white-space: normal;
+}
