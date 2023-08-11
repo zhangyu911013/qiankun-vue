@@ -7,13 +7,13 @@
     "@vue/composition-api": "^1.7.1",
     "core-js": "^3.8.3",
     "nprogress": "^0.2.0",
-    "pinia": "^2.1.6",
+    "pinia": "2.1.6",
     "qiankun": "^2.0.22",
     "vue": "2.6.14",
     "vue-router": "^3.5.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
+    "@babel/core": "7.22.10",
     "@babel/eslint-parser": "^7.12.16",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
@@ -28,7 +28,9 @@
     "js-yaml": "^4.1.0",
     "sass": "^1.26.10",
     "sass-loader": "^10.0.2",
-    "vue-template-compiler": "^2.6.14"
+    "vue-template-compiler": "^2.6.14",
+    "@vue/devtools-api": "^6.5.0",
+    "vue-demi": ">=0.14.5"
   },
   "scripts": {
     "start:all": "pnpm recursive run start",
